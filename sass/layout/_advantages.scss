@@ -1,0 +1,80 @@
+.advantages {
+  padding-top: 61px;
+  padding-bottom: 59px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.advantages__list {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.advantages__item {
+  max-width: 320px;
+  @media screen and (min-width: 480px) {
+    max-width: 450px;
+    .advantages__list &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    max-width: 354px;
+    .advantages__list &:nth-child(-n + 2) {
+      margin-bottom: 30px;
+    }
+    .advantages__list &:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 270px;
+    .advantages__list &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
+.advantages-block {
+  @include size(290px, 120px);
+  background: #f5f4fa;
+  border-radius: 4px;
+  @include display(flex, center, center);
+  margin-bottom: 30px;
+  @media screen and (min-width: 480px) {
+    @include size(450px, 120px);
+  }
+  @media screen and (min-width: 768px) {
+    @include size(354px, 120px);
+  }
+  @media screen and (min-width: 1200px) {
+    @include size(270px, 120px);
+  }
+}
+
+.advantages-block__icon {
+  @include size(70px, 70px);
+}
+
+.advantages-block__title {
+  @include font(700, 14px, 1.14);
+  text-transform: uppercase;
+  color: var(--secondary-title-color);
+  margin-bottom: 10px;
+  align-items: center;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}
+
+.advantages-block__text {
+  @include font(400, 14px, 1.71);
+  color: var(--primary-text-color);
+}
