@@ -9,7 +9,6 @@
 }
 
 .hero__overlay {
-  max-width: 480px;
   height: 400px;
   margin-left: auto;
   margin-right: auto;
@@ -37,7 +36,6 @@
     }
   }
   @media screen and (min-width: 768px) {
-    max-width: 768px;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),

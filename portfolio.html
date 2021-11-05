@@ -305,7 +305,7 @@
                                     ./images/mob-img/portfolio9-1x.jpg 1x, 
                                     ./images/mob-img/portfolio9-2x.jpg 2x">
                                 <img src="images/desktop-img/portfolio9.jpg" 
-                                width="370" 
+                                width="100%" 
                                 height="294" 
                                 alt="Growing Business" />
                                 </picture>
@@ -400,6 +400,7 @@
     <!-- Mobile menu -->
     
     <div class="menu-container js-menu-container" id="mobile-menu">
+        <div class="mobile-menu_container">
         <button class="mobile-menu__btn_close js-close-menu">
             <svg class="mobile-menu__icon">
                 <use href="./images/sprite.svg#icon-close-black"></use>
@@ -411,6 +412,7 @@
             </li>
             <li class="mobile-menu__item_nav"><a class="mobile-menu__item_nav-link" href="">Контакты</a></li>
         </ul>
+        <div class="mobile-menu_bottom">
         <a class="mobile-menu__link_tel" href="tel:+380961111111">+38 096 111 11 11</a>
         <a class="mobile-menu__link_mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
         <ul class="mobile-menu__list_social">
@@ -422,6 +424,8 @@
                     href="">Facebook</a></li>
             <li class="mobile-menu__item_social"><a class="mobile-menu__item_social_link" href="">LinkedIn</a></li>
         </ul>
+        </div>
+    </div>
     </div>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
         integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
